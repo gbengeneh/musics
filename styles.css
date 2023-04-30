@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {    
+    min-height: 100vh;
+}
+
+main.splash-screen {
+    /* background-color: #9E9898;
+    background: #6700B0;
+    background: #FFFFFF;
+    background: #000000;
+    background: #6D6767; */
+    background: linear-gradient(180deg, #0E0015 19.43%, #310248 47.66%, #0E0015 77.25%);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(184.51deg, #660099 13.94%, rgba(255, 102, 0, 0.72) 41.2%, #000000 72.27%); */
+}
+
+main.splash-screen a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+main.onboarding-screen {
+    background: rgba(37, 2, 54, 0.8);
+    background-image: url("/images/digital-audio\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+    padding: 3rem;
+}
+
+main.onboarding-screen h1 {
+    display: block;
+    margin-inline: auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-top: 100%;
+    /* width: 100%; */
+    margin-inline: 1rem;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+main.onboarding-screen div {
+    width: 100%;
+}
+
+main.onboarding-screen a {
+    /* background: linear-gradient(180deg, #0E0015 19.43%, #310248 47.66%, #0E0015 77.25%); */
+    background-color: #6700B0;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    margin-top: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* //////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////// */
+
+main.onboarding-screen-two, .sign-up-screen, .sign-in-screen, .pick-an-artist, .notification, .home-screen, .music-detector, .lyrics-screen, .library-main, .lyrics-main-two, .stream-screen, .premium {
+    background: linear-gradient(180deg, #0E0015 19.43%, #310248 47.66%, #0E0015 77.25%);
+    padding: 2rem;
+}
+
+main.onboarding-screen-two img, .sign-up-screen img, .sign-in-screen img {
+    width: 110px;
+    margin-inline: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+main.onboarding-screen-two h2 {
+    height: 28px;
+    width: 284px;
+    left: 53px;
+    top: 160px;
+    border-radius: nullpx;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+main.onboarding-screen-two p {
+    height: 19px;
+    width: 284px;
+    left: 54px;
+    top: 207px;
+    border-radius: nullpx;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-bottom: 4rem;
+}
+
+main.onboarding-screen-two h2, main.onboarding-screen-two p {
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+main.onboarding-screen-two .songs-types-circle {
+    height: 66px;
+    width: 72px;
+    left: 72px;
+    top: 296px;
+    border-radius: 50%;
+    background-color: #6700B0;
+}
+
+.songs-types-circle {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* color: #fff; */
+}
+
+.songs-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.nav-submit .next-button {
+    display: block;
+}
+
+.nav-submit a {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+.nav-submit a:active {
+    border: 2px #fff solid;
+}
+
+.nav-submit a.next-button {
+    text-align: center;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #6700B0;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+.sign-up-screen form input, .sign-in-screen form input {
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.sign-up-screen form label, .sign-in-screen form label {
+    color: #fff;
+}
+
+.password-cotainer {
+    position: relative;
+}
+
+.sign-up-screen form img.eye, .sign-in-screen form img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 24px;
+    margin-right: 16px;
+}
+
+.sign-up-screen form button, a.signin-button, .sign-in-screen form button {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #fff;
+    background-color: #6700B0;
+    border: none;
+}
+
+.sign-up-screen p, .sign-up-screen p a, .sign-in-screen p, .sign-in-screen p a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign-up-screen h3, .sign-in-screen h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.signup-options {
+    width: 100%;
+    padding: 1rem;
+}
+
+.signup-options img {
+    height: 27px;
+    width: 27px;
+    top: 50%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+a.signup-links {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #660099;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-align: center;
+    background-position: 24px;
+}
+
+.google-link {
+    background-image: url("/images/icons8-google.svg");
+}
+
+.facebook-link {
+    background-image: url("/images/facebook (1).svg");
+}
+
+.apple-link {
+    background-image: url("/images/apple.svg");
+}
+
+.sign-in-screen form {
+    margin-top: 4rem;
+}
+
+form a.forget {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pick-an-artist img, .notification img {
+    display: block;
+    margin-inline: auto;
+    width: 5rem;
+}
+
+.pick-an-artist h2, .pick-an-artist p, .notification h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.notification .notification-container {
+    background-color: #fff;
+    margin-top: 2rem;
+    border-radius: 18px;
+    padding: 1.5rem;
+}
+
+.notification .notification-container p {
+    text-align: center;
+}
+
+.notification-buttons {
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+}
+
+.notification-buttons button {
+    border-radius: .5rem;
+    border: 0;
+    background-color: #6700B0;
+    color: #fff;
+    padding: 1rem;
+}
+
+button.dont-allow {
+    color: #6700B0;
+    background-color: #fff;
+    border: 2px solid #6700B0;
+}
+
+.notification h2 {
+    margin-top: 7rem;
+}
+
+.home-screen .header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.home-screen .header input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: .7rem;
+    text-align: center;
+}
+
+.home-screen .search-container {
+    position: relative;
+}
+
+.home-screen .search-container img {
+    position: absolute;
+    top: .4rem;
+    right: 1rem;
+}
+
+nav.menu-bar ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+nav.menu-bar ul a {
+    text-decoration: none;
+    color: #b9b9b9;
+}
+
+nav.menu-bar ul a:active {
+    color: #fff;
+}
+
+nav.menu-bar ul li {
+    display: inline-block;
+    margin-right: 1.4rem;
+    overflow: hidden;
+}
+
+.container-homescreen {
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-top: 1rem;
+}
+
+.home-screen h2, .music-detector h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.home-screen a.see-more {
+    color: #fff;
+    text-decoration: none;
+}
+
+main.home-screen, .music-detector {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    gap: 3rem;
+    color: #fff;
+}
+
+.home-footer img, .library-footer img, .stream-footer img, .premium-footer img{
+    display: block;
+    margin-inline: auto;
+    margin-bottom: .5rem;
+}
+
+body > main > div.arrow-right {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.music-detector-header, .lyrics-header, .library-header {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.music-detector-header button {
+    padding: .3rem;
+    border-radius: .5rem;
+}
+
+.music-detector h3 {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.center-circle img {
+    display: block;
+    margin-inline: auto;
+    margin-top: 2rem;
+}
+
+.go-to-playlists-container-background {
+    display: absolute;
+    width: 100vh;
+    height: 100vh;
+    background-color: hsla(0, 0%, 33%, 40%);
+    z-index: 9999999999;
+}
+
+.go-to-playlists-container {
+    margin-top: 2rem;
+    background-color: #fff;
+    height: 5rem;
+    width: 80%;
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+.go-to-playlists-container button {
+    background-color: #6700B0;
+    color: #fff;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.lyrics-header h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.lyrics-header button {
+    color: #660099;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+.lyrics {
+    background-color: #660099;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.library-header h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.recently-added, .Playlists, .Artists, .Offline {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.recently-added a, .Playlists a, .Artists a, .Offline a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.detector-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+}
+
+.cancel-lyrics {
+    background-color: #6700B0;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    color: #fff;
+}
+
+.detector-header h3 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.left-start-listening p {
+    color: #fff;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.stream-screen p {
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.stream-screen button.go-to-playlist {
+    width: 100%;
+    background-color: #6700B0;
+    color: #fff;
+    padding: .6rem;
+    border-radius: 12px;
+}
+
+.artists-collection {
+    padding: 1rem;
+    border: 2px solid #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 5rem;
+}
+
+.premium img.splash-screen-logo {
+    display: block;
+    margin-inline: auto;
+    width: 90px;
+    height: 98px;
+}
+
+.premium li, .premium h2, .premium p {
+    color: #fff;
+}
+
+.premium h2, .premium p {
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem;
+}
+
+.premium ul {
+    margin-top: 5rem;
+}
+
+.amount {
+    background-color: #fff;
+    width: 80%;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-inline: auto;
+}
+
+.amount p {
+    color: #660099;
+    margin: 0;
+}
+
+.amount {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

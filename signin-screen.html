@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <main class="sign-in-screen">
+
+        <form method="post" action="api/process.php">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+
+            <label for="password">Password</label>
+            <div class="password-cotainer">
+                <input type="password" name="password" id="password" placeholder="Not more than 12 characters.">
+                <img id="togglePassword" class="eye" src="images/eye-regular.svg" alt="eye">
+            </div>
+            <a class="forget" href="#">Forgot Password?</a>
+
+            <!-- <a class="signin-button" href="#">Sign In</a> -->
+            <button type="submit"  class="signin-button" value="login" name="login_user" >Login</button>
+            <p>Don't Have An Account Yet? <a style="font-weight: 500;" href="">Create Account</a></p>
+
+            <h3>Or</h3>
+
+            <div class="signup-options">
+                <a class="signup-links google-link" href="">
+                    Sign up with Google
+                </a>
+    
+                <a class="signup-links facebook-link" href="">
+                    Sign up with Facebook
+                </a>
+    
+                <a class="signup-links apple-link" href="">
+                    Sign up with Apple
+                </a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            this.classList.toggle("bi-eye");
+        });
+    </script>
+</body>
+</html>
